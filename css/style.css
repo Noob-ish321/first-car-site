@@ -8,21 +8,17 @@ html{
 }
 
 p {
-    color: white;
+    color: rgba(83, 228, 148, 0.925);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     display: flex;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22;
-}
-
-h2{
-    text-align: center;
-    color: maroon;
-    padding: 20px;
-    border: 3px solid black;
 }
 
 header{
@@ -34,7 +30,7 @@ header{
     width: 100vw;
     border: 20px;
     background-color: azure;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: maroon;
 
 }
@@ -48,34 +44,60 @@ h1{
     margin-top: 50px;
 }
 
-
-  @media screen and (max-width: 900px) { 
-        header {
-            width: 100%;
-            display: block;
-        } 
-    }
-
 header nav a{
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: maroon;
     text-align: center;
-    font-size: 20px;
-    margin-block-start: 0.65em;
-    margin-inline-end: 0.65em;
+    font-size: 25px;
 }
 
-#transbox1, #transbox2, #transbox3{
+
+  @media screen and (max-width: 900px) { 
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        } 
+    }
+
+h2{
+    text-align: center;
+    color: rgb(226, 177, 121);
+    padding: 20px;
+    font-size: 40px;
+    background-color:rgba(0, 0, 0, 0.4)
+}
+
+
+#textbox1, #textbox2, #textbox3{
     border: 1.5px solid beige;
     padding: 10px;
-    background-color: grey;
+    background-color:rgba(0, 0, 0, 0.2);
     margin: 2%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+#textbox1{
+    background-image: url("../images/legendary-toyota-2jz-engine.jpg");
+    background-size: cover;
+    background-position: 15% 65%;
+
+}
+
+#textbox3{
+    background-image: url(https://www.mad4wheels.com/img/free-car-images/mobile/16516/bmw-m5-f90-competition-ascari-spain--2018-492842.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+    #textbox1, #textbox3{
+        background-size: contain;
+    }
+}
+    
 img{
     max-width: 100%;
     height: auto;
