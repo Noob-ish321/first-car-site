@@ -1,45 +1,111 @@
+*{
+    margin: 0;
+}
 html{
-    margin: 2%;
     background-image: url("../images/background-image.jpg");
     background-attachment: fixed;
     background-size: cover;
-
 }
 
 p {
-    color: white;
+    color: rgba(83, 228, 148, 0.925);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 22;
+}
+
+header{
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 0;
+    width: 100vw;
+    border: 20px;
+    background-color: azure;
+    justify-content: space-evenly;
+    color: maroon;
+
 }
 
 h1{
-    border: 2px solid whitesmoke;
-    padding: 20px;
-    opacity: 0.4;
-    background-color: azure;
     text-align: center;
     color: maroon;
-
+    border: 3px solid black;
+    padding: 20px;
+    background-color: azure;
+    margin-top: 50px;
 }
+
+header nav a{
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: maroon;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+  @media screen and (max-width: 900px) { 
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        } 
+    }
 
 h2{
     text-align: center;
-    color: maroon;
+    color: rgb(226, 177, 121);
+    padding: 20px;
+    font-size: 40px;
+    background-color:rgba(0, 0, 0, 0.4)
 }
 
-#transbox1, #transbox2, #transbox3{
+
+#textbox1, #textbox2, #textbox3{
     border: 1.5px solid beige;
     padding: 10px;
-    opacity: 0.7;
-    background-color: grey;
+    background-color:rgba(0, 0, 0, 0.2);
+    margin: 2%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+#textbox1{
+    background-image: url("../images/legendary-toyota-2jz-engine.jpg");
+    background-size: cover;
+    background-position: 15% 65%;
+
+}
+
+#textbox3{
+    background-image: url(https://www.mad4wheels.com/img/free-car-images/mobile/16516/bmw-m5-f90-competition-ascari-spain--2018-492842.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+    #textbox1, #textbox3{
+        background-size: contain;
+    }
+}
+    
 img{
     max-width: 100%;
     height: auto;
+    margin: 2%;
+}
+
+@media screen and (max-width: 900px) {
+    img{
+        margin: 0;
+    }
 }
